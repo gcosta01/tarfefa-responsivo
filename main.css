@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #8989ff;
+}
+
+.logo {
+    width: 40%;
+}
+
+.logo h1 {
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+    width: 60%;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.sobre {
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+.imagem-loja {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+
+.imagem-loja img {
+    width: 350px;
+}
+
+.sobre-loja {
+    width: 50%;
+    height: 100%;
+}
+
+.sobre-loja h2 {
+    margin-bottom: 32px;
+    color:#8989ff;
+    border-bottom: 2px solid #8989ff;
+}
+
+.sobre-loja p {
+    text-align: justify;
+}
+
+.titulo div h2 {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    color:#8989ff;
+    border-bottom: 2px solid #8989ff;
+}
+
+.produtos {
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+.produto1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 25%;
+    margin: 0 16px;
+}
+
+.produto1 img {
+    max-width: 50%;
+}
+
+.descricao-produto h2 {
+    margin-top: 32px;
+}
+
+.descricao-produto p {
+    margin-top: 32px;
+}
+
+.descricao-produto button {
+    margin-top: 32px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .sobre {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .imagem-loja {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .imagem-loja img {
+        max-width: 80%;
+        height: auto;
+    }
+    
+    .sobre-loja {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    
+    
+    .produtos {
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: space-around;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    
+    .produto1 {
+        width: 45%;
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .produto1 img {
+        width: 80%;
+        height: auto;
+    }
+    
+    
+    .titulo div h2 {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        color: #8989ff;
+        border-bottom: 2px solid #8989ff;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .sobre {
+    flex-direction: column;
+    height: auto;
+    }
+
+    .imagem-loja {
+    width: 100%;
+    order: 1;
+    margin-bottom: 20px;
+    }
+
+    .sobre-loja {
+    width: 100%;
+    order: 2;
+    padding: 0 20px;
+    box-sizing: border-box;
+      margin-bottom: 20px; /* Adiciona espaço entre a imagem e a seção 'Sobre a loja' */
+    }
+
+    .titulo div h2 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    }
+
+    .produtos {
+      display: block; /* Altera para display em bloco */
+      width: 100%; /* Ocupar toda a largura disponível */
+    }
+
+    .produto1 {
+      width: calc(100% - 20px); /* Ocupar toda a largura disponível, considerando o padding */
+      margin: 10px auto; /* Centralizar e adicionar espaçamento entre os produtos */
+    text-align: center;
+    }
+
+    .descricao-produto {
+      width: calc(100% - 20px); /* Ocupar toda a largura disponível, considerando o padding */
+      margin: 10px auto; /* Centralizar e adicionar espaçamento */
+    text-align: center;
+    }
+}
